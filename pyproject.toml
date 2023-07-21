@@ -2,21 +2,21 @@
 name = "MyProject"
 version = "0.1.0"
 description = ""
-authors = ["Jane Doe <jane_doe@some_email.com>"]
+authors = ["Flavio Regis de Arruda <flavio@xboard.me>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.11"
 
 [tool.poetry.dev-dependencies]
-pytest = "^7.0"
-pytest-cov = "^4.0.0"
+pytest = "^7.4"
+pytest-cov = "^4.1"
 pytest-mypy = "^0.10.0"
-pytest-mock = "^3.7.0"
-isort = "^5.10.1"
-pre-commit = "^3.0.4"
-black = "^23.1.0"
+pytest-mock = "^3.11.0"
+isort = "^5.12.0"
+pre-commit = "^3.3.0"
+black = "^23.7.0"
 flake8 = "^6.0.0"
-flake8-docstrings = "^1.6.0"
+flake8-docstrings = "^1.7.0"
 
 [tool.mypy]
 disallow_any_explicit = true
@@ -37,5 +37,5 @@ profile = "black"
 addopts = "-v --mypy -p no:warnings --cov=myproject --cov-report=html --doctest-modules --ignore=myproject/__main__.py"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core>=1.6.0"]
 build-backend = "poetry.core.masonry.api"
